@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
 }
+/*Styling for body*/
 body {
   font-family: 'Roboto', sans-serif;
 }
-header {
-
-}
+/*viser ikke infoboks på mobil*/
 .infoboks {
   display: none;
 }
+/*styling af logo*/
 .logo {
+  position: fixed;
 	width: 100%;
 	height: auto;
   padding: 20px;
@@ -22,12 +23,13 @@ svg {
 	width: 20%;
 	height: auto;
 }
+/*viser ikke desktop menu på mobil*/
 .desktopnav {
   display: none;
 }
 /*Stylling for burgermenu-icon*/
 .menuopen {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 20px;
@@ -65,10 +67,6 @@ svg {
   font-weight: bold;
   color: 000;
 }
-/*When you mouse over the navigation links, they change their color*/
-.sidenav a:hover {
-
-}
 /*Position and styling for the close button (top right corner)*/
 .sidenav .closebtn {
   position: absolute;
@@ -77,26 +75,43 @@ svg {
   font-size: 25px;
   margin-left: 50px;
 }
+/*styling for footer*/
 footer {
+  position: absolute;
+  margin-top: 100px;
   text-align: center;
   font-size: 12px;
+  width: 100%;
 }
-footer p {
+/*footer logo og kontakt info styling*/
+footer .logo {
+  position: absolute;
+}
+footer .kontakt {
+  position: absolute;
+  text-align: center;
   font-weight: thin;
+  width: 100%;
+  margin-top: 60px;
 }
-footer .name {
+footer .kontakt .name {
   font-size: 15px;
   font-weight: bold;
 }
+/*socialmedia-icon styling*/
 .socialicon img{
   padding: 5px;
   width: 40px;
   height: auto;
 }
+/*styling for desktop*/
 @media screen and (min-width: 500px) {
+  /*Sætter header til fixed, så når man scroller
+   forbliver den i toppen*/
   header {
     position: fixed;
   }
+  /*stylling for infoboks*/
   .infoboks {
     display: block;
     position: fixed;
@@ -107,17 +122,19 @@ footer .name {
     width: 100%;
     font-size: 10px;
     top: 0;
-
   }
+
   .infoboks a {
     display: inline;
     padding: 10px;
     color: #fff;
     text-decoration: none;
   }
+  /*viser ikke burgermenu på desktop*/
   .menuopen {
     display: none;
   }
+  /*stylling for logo på desktop*/
   .logo {
     position: fixed;
   	width: 100%;
@@ -129,6 +146,7 @@ footer .name {
   	width: 10%;
   	height: auto;
   }
+  /*stylling for menu for desktop*/
   .desktopnav {
     position: fixed;
     display: inline-block;
@@ -149,6 +167,7 @@ footer .name {
   .desktopnav a.active {
     text-decoration: underline;
   }
+  /*stylling for footer på desktop*/
   footer {
     position: absolute;
     margin-top: 100px;
@@ -159,10 +178,14 @@ footer .name {
   footer svg {
     display: none;
   }
-  footer p {
+  footer .kontakt {
+    position: absolute;
+    text-align: center;
     font-weight: thin;
+    width: 100%;
+    margin-top: 60px;
   }
-  footer .name {
+  footer .kontakt .name {
     font-size: 15px;
     font-weight: bold;
   }
