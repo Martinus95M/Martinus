@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+/*Stylling for burgermenu-icon*/
+.menuopen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+}
+/*Styling for side navigation menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #DBF3C8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*Styling for side navigation menu links*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+/*This show what side you are on in the nav bar*/
+.sidenav a.active {
+  font-weight: bold;
+  color: 000;
+}
+/*When you mouse over the navigation links, they change their color*/
+.sidenav a:hover {
+
+}
+/*Position and styling for the close button (top right corner)*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Forside</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="menu.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menuopen">
+        <!--opens the slide menu-->
+        <span onclick="openNav()">&#9776;</span>
+      </nav>
+      <!--Navigation slide menu-->
+      <nav id="mySidenav" class="sidenav">
+        <!--closebutton in right corner-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!--class="active" shows with page you are on-->
+        <a class="active" href="index.html">Forside</a>
+        <a href="#">Produkt 1</a>
+        <a href="#">Produkt 2</a>
+        <a href="#">Produkt 3</a>
+        <a href="#">Om os</a>
+      </nav>
+    </header>
+  </body>
