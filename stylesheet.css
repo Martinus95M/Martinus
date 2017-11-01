@@ -80,10 +80,37 @@ svg {
 
 }
 /*styling for banner*/
-.content img {
+.content .banner {
   width: 100%;
   height: auto;
-  margin-top: 70px;
+  margin-top: 110px;
+}
+/*Styling for produkt img*/
+.content .produktimg {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+.titel {
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.titel h2 {
+  margin-bottom: 20px;
+}
+.buybutton a {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*styling for footer*/
 footer {
