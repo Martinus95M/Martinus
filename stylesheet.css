@@ -83,7 +83,7 @@ svg {
 .content .banner {
   width: 100%;
   height: auto;
-  margin-top: 110px;
+  margin-top: 60px;
 }
 /*Styling for produkt img*/
 .content .produktimg {
@@ -95,15 +95,19 @@ svg {
 }
 .titel {
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10px;
 }
-.titel h2 {
+.titel h1 {
   margin-bottom: 20px;
+}
+.titel h2 {
+  margin-top: 20px;
 }
 .buybutton a {
   display: block;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 20px;
   padding: 20px;
   width: 90%;
   text-align: center;
@@ -112,10 +116,16 @@ svg {
   text-decoration: none;
   cursor: pointer;
 }
+.info {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+}
 /*styling for footer*/
 footer {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
   font-size: 12px;
   width: 100%;
