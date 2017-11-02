@@ -39,7 +39,7 @@ svg {
   top: 0;
   right: 0;
   padding: 20px;
-  font-weight: 100;
+  font-weight: thin;
   font-size: 20px;
   cursor: pointer;
   color: #000;
@@ -52,7 +52,7 @@ svg {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #DBF3C8;
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -64,14 +64,14 @@ svg {
   margin-top: 5px;
   text-decoration: none;
   font-size: 25px;
-  color: #000;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 /*This show what side you are on in the nav bar*/
 .sidenav a.active {
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 /*Position and styling for the close button (top right corner)*/
 .sidenav .closebtn {
@@ -102,23 +102,25 @@ svg {
 .content .produktimg2 {
   display: none;
 }
-.titel {
+article {
   display: block;
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10px;
 }
-.titel h1 {
+article h1 {
   margin-bottom: 20px;
 }
-.titel h2 {
+article h2 {
   margin-top: 20px;
 }
+
 .buybutton a {
   display: block;
   margin: auto;
   margin-top: 20px;
   padding: 20px;
-  width: 90%;
+  width: 100%;
   text-align: center;
   background-color: #000;
   color: #fff;
@@ -278,7 +280,7 @@ footer .kontakt .name {
     margin: auto;
     margin-top: 30px;
     margin-right: 5%;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     text-align: center;
     background-color: #000;
@@ -287,7 +289,7 @@ footer .kontakt .name {
     cursor: pointer;
   }
   .wrap {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .info {
     position: relative;
@@ -302,6 +304,7 @@ footer .kontakt .name {
     width: 25%;
     height: auto;
     margin: auto;
+    margin-top: 30px;
     margin-right: 5%;
     float: right;
   }
@@ -322,7 +325,7 @@ footer .kontakt .name {
   footer .kontakt {
     position: absolute;
     text-align: center;
-    font-weight: 100;
+    font-weight: thin;
     width: 100%;
   }
   footer .kontakt .name {
