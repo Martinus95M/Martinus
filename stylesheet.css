@@ -7,6 +7,11 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+header {
+position: fixed;
+top: 0;
+z-index: 999;
+}
 /*viser ikke infoboks på mobil*/
 .infoboks {
   display: none;
@@ -14,6 +19,7 @@ body {
 /*styling af logo*/
 .logo {
   position: fixed;
+  background-color: white;
 	width: 100%;
 	height: auto;
   padding: 20px;
@@ -33,7 +39,7 @@ svg {
   top: 0;
   right: 0;
   padding: 20px;
-  font-weight: thin;
+  font-weight: 100;
   font-size: 20px;
   cursor: pointer;
   color: #000;
@@ -65,7 +71,7 @@ svg {
 /*This show what side you are on in the nav bar*/
 .sidenav a.active {
   font-weight: bold;
-  color: 000;
+  color: #000;
 }
 /*Position and styling for the close button (top right corner)*/
 .sidenav .closebtn {
@@ -82,6 +88,9 @@ svg {
   height: auto;
   margin-top: 60px;
 }
+.wrap {
+  clear: both;
+}
 /*Styling for produkt img*/
 .content .produktimg {
   display: block;
@@ -94,8 +103,8 @@ svg {
   display: none;
 }
 .titel {
+  display: block;
   margin-left: 5%;
-  margin-right: 5%;
   margin-top: 10px;
 }
 .titel h1 {
@@ -131,10 +140,13 @@ svg {
 }
 /*styling for footer*/
 footer {
-  position: absolute;
-  margin-top: 30px;
+  clear: both;
+  position: relative;
+  display: block;
+  margin-top: -10px;
   text-align: center;
   font-size: 12px;
+  height: 10px;
   width: 100%;
 }
 /*footer logo og kontakt info styling*/
@@ -144,7 +156,7 @@ footer .logo {
 footer .kontakt {
   position: absolute;
   text-align: center;
-  font-weight: thin;
+  font-weight: 100;
   width: 100%;
   margin-top: 60px;
 }
@@ -164,9 +176,12 @@ footer .kontakt .name {
    forbliver den i toppen*/
   header {
     position: fixed;
+    top: 0;
+    z-index: 999;
   }
   /*stylling for infoboks*/
   .infoboks {
+    z-index: 2;
     display: block;
     position: fixed;
     padding: 10px;
@@ -191,6 +206,7 @@ footer .kontakt .name {
   /*stylling for logo på desktop*/
   .logo {
     position: fixed;
+    background-color: white;
   	width: 100%;
   	height: auto;
     margin-top: 20px;
@@ -226,6 +242,7 @@ footer .kontakt .name {
   .content .banner {
     width: 100%;
     height: auto;
+    min-height: 100%;
     margin-top: 120px;
   }
   /*Styling for produkt img*/
@@ -240,17 +257,18 @@ footer .kontakt .name {
     margin-top: 60px;
     float: left;
   }
-  .titel {
-    display: block;
-    margin-right: 13%;
+  article {
+    position: absolute;
+    display: inline-block;
+    float: left;
     margin-top: 50px;
-    float: right;
+    margin-left: 5%;
   }
-  .titel h1 {
+  article h1 {
     margin-bottom: 20px;
     font-size: 50px;
   }
-  .titel h2 {
+  article h2 {
     margin-top: 20px;
     font-size: 40px;
   }
@@ -258,39 +276,44 @@ footer .kontakt .name {
     float: right;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 5%;
     padding: 20px;
-    width: 25%;
+    width: 100%;
     text-align: center;
     background-color: #000;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
   }
+  .wrap {
+    margin-top: 30px;
+  }
   .info {
+    position: relative;
     display: block;
     margin-left: 5%;
-    margin-top: 30px;
     width: 60%;
     float: left;
   }
   .produktimg3 {
+    position: relative;
     display: block;
     width: 25%;
     height: auto;
     margin: auto;
-    margin-top: 30px;
     margin-right: 5%;
     float: right;
   }
   /*stylling for footer på desktop*/
   footer {
-    position: absolute;
-    margin-top: 60%;
-    margin-bottom: 12%;
+    clear: both;
+    position: relative;
+    display: block;
+    margin-top: -10px;
     text-align: center;
     font-size: 12px;
+    height: 10px;
     width: 100%;
   }
   footer svg {
@@ -299,9 +322,8 @@ footer .kontakt .name {
   footer .kontakt {
     position: absolute;
     text-align: center;
-    font-weight: thin;
+    font-weight: 100;
     width: 100%;
-    margin-top: 60px;
   }
   footer .kontakt .name {
     font-size: 15px;
