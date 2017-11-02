@@ -76,9 +76,6 @@ svg {
   margin-left: 50px;
 }
 /*styling for content*/
-.content {
-
-}
 /*styling for banner*/
 .content .banner {
   width: 100%;
@@ -92,6 +89,9 @@ svg {
   height: auto;
   margin: auto;
   margin-top: 20px;
+}
+.content .produktimg2 {
+  display: none;
 }
 .titel {
   margin-left: 5%;
@@ -121,6 +121,13 @@ svg {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 30px;
+}
+.produktimg3 {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
 }
 /*styling for footer*/
 footer {
@@ -214,10 +221,73 @@ footer .kontakt .name {
   .desktopnav a.active {
     text-decoration: underline;
   }
+  /*styling for content*/
+  /*styling for banner*/
+  .content .banner {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  /*Styling for produkt img*/
+  .content .produktimg {
+    display: none;
+  }
+  .content .produktimg2 {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 20px;
+    float: left;
+  }
+  .titel {
+    display: block;
+    margin-right: 5%;
+    margin-top: 10px;
+    float: right;
+  }
+  .titel h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  .titel h2 {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .buybutton a {
+    float: right;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 5%;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .info {
+    display: block;
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 60%;
+    float: left;
+  }
+  .produktimg3 {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 5%;
+    float: right;
+  }
   /*stylling for footer på desktop*/
   footer {
     position: absolute;
-    margin-top: 100px;
+    margin-top: 60%;
     text-align: center;
     font-size: 12px;
     width: 100%;
